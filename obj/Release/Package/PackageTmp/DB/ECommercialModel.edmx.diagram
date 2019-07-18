@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ef2a0e5883094f11b37610e675411fa6" Name="Diagram1">
+        <EntityTypeShape EntityType="ECommercialDBModel.Comments" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ECommercialDBModel.MessageReplies" Width="1.5" PointX="6" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ECommercialDBModel.OrderDetails" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ECommercialDBModel.Products" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="ECommercialDBModel.FK_Comments_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="ECommercialDBModel.FK_OrderDetails_Products" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ECommercialDBModel.Categories" Width="1.5" PointX="0.75" PointY="16.375" />
+        <AssociationConnector Association="ECommercialDBModel.FK_Categories_Categories" />
+        <AssociationConnector Association="ECommercialDBModel.FK_Products_Categories" />
+        <EntityTypeShape EntityType="ECommercialDBModel.Addresses" Width="1.5" PointX="3" PointY="4.75" />
+        <EntityTypeShape EntityType="ECommercialDBModel.Orders" Width="1.5" PointX="3" PointY="12.625" />
+        <AssociationConnector Association="ECommercialDBModel.FK_OrderDetails_Orders" />
+        <EntityTypeShape EntityType="ECommercialDBModel.Members" Width="1.5" PointX="0.75" PointY="4.875" />
+        <EntityTypeShape EntityType="ECommercialDBModel.Messages" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="ECommercialDBModel.FK_Addresses_Members" />
+        <AssociationConnector Association="ECommercialDBModel.FK_Comments_Members" />
+        <AssociationConnector Association="ECommercialDBModel.FK_Members_Members" />
+        <AssociationConnector Association="ECommercialDBModel.FK_MessageReplies_Members" />
+        <AssociationConnector Association="ECommercialDBModel.FK_Messages_Members" />
+        <AssociationConnector Association="ECommercialDBModel.FK_Orders_Members" />
+        <AssociationConnector Association="ECommercialDBModel.FK_MessageReplies_Messages" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
